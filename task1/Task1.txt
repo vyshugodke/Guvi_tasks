@@ -1,0 +1,46 @@
+(Question-1) Difference between http1.1 and 2:
+
+HTTP/2 is a binary protocol.This is potentially much more compressed than HTTP/1.1 and this fewer bytes on-the-wire. This means less bandwidth usage and faster load times - benefits which are amplified with many smaller requests.
+
+HTTP/2 is multiplexed. This means many requests can leverage an existing connection in parallel. Coming from HTTP/1.1’s one connection per request this is a huge leap in efficiency.
+
+HTTP/2 requests can be pushed. This means requests can be pre-sent (and be ready before they've even been requested)
+
+HTTP/2 addresses the shortcomings, speeds up page load significantly and is widely supported by all major browsers and servers.
+
+HTTP/1.1 duplicates data across requests (cookies and other headers) causing too much data redundancy and thus impacting performance. HTTP/2 on the other implements compression of headers to reduce data redundancy and thus improve performance.
+
+HTTPS/2 rather than waiting for clients to make requests, will implements server push of resources/assets like JS and CSS, when it believes these will be required and in this way avoids round tripping and improves performance.
+
+HTTP/2 can compress HTTP headers. It allows for server push, which can send resources to the browser even before the HTML document is completely parsed.
+
+HTTP/2 uses HPACK compressions, which reduces overhead. Many headers were sent with the same values in every request in HTTP/1.1.
+
+
+(Question-2) Difference between GET and POST:
+
+Http is web protocol based on request response mechanism.Client performs a http request and request is sent to server which is processed by server generating response and returns generated response to client.
+GET and POST are defined as HTTP request methods.
+
+
+Http GET method:
+
+GET requests can be cached, it remains in the browser history.
+
+It can be bookmarked, this should never be used when dealing with sensitive data.
+
+It has length restriction.
+
+GET requests a representation of the specified resource. Note that GET should not be used for operations that cause side-effects, such as using it for taking actions in web applications. One reason for this is that GET may be used arbitrarily by robots or crawlers, which should not need to consider the side effects that a request should cause.
+
+
+Http POST method:
+
+POST submits data to be processed (e.g., from an HTML form) to the identified resource. The data is included in the body of the request. This may result in the creation of a new resource or the updates of existing resources or both.
+
+This used when dealing with sensitive data, it cannot be cached.
+
+It do not remains in the browser history, it cannot be bookmarked.
+
+It have no restriction on data length.
+
