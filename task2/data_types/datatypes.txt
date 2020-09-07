@@ -1,0 +1,127 @@
+JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+
+JavaScript variables can hold many data types as:
+
+____Strings___:
+
+A string (or a text string) is a series of characters like "John parker". Strings are written with quotes, you can use single or double quotes.
+var carName1 = "Volvo XC60"; (Using double quotes)
+var carName2 = 'Volvo XC60'; (Using single quotes)
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+var answer1 = "It's alright"; (Single quote inside double quotes)
+var answer2 = "He is called 'Johnny'"; (Single quotes inside double quotes)
+var answer3 = 'He is called "Johnny"';  (Double quotes inside single quotes)
+
+
+_____Numbers_______:
+
+JavaScript has only one type of numbers. Numbers can be written with, or without decimals.
+var x1 = 54.1; (Written with decimals)
+var x2 = 54; (Written without decimals)
+
+Extra large or extra small numbers can be written with scientific (exponential) notation:
+var y = 123e5;  (12300000)
+var z = 123e-5; (0.00123)
+
+
+______Booleans________:
+
+Booleans can only have two values- true or false. Booleans are often used in conditional testing.
+var x = 5;
+var y = 5;
+var z = 6;
+(x == y)   // Returns true
+(x == z)  // Returns false
+
+
+______Objects________:
+
+JavaScript objects are written with curly braces {}. Object properties are written as key:value pairs, separated by commas. In the following example, "firstName" is used as key and "John" is used as value.
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+
+
+_______Arrays_______:
+
+JavaScript arrays are written with square brackets. Array items are separated by commas. Array indexes are zero-based, which means the first item is [0], second is [1], and so on. The following code creates an array containing three items:
+
+var cars = ["Saab", "Volvo", "BMW"];
+var fruits = ["Mango", "Apple", "Kiwi"];
+
+The typeof operator returns "object" for arrays because in JavaScript arrays are objects.
+
+
+______Undefined_______:
+
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined. Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+var car;  (Value is undefined, type is undefined)
+car = undefined;  (Value is undefined, type is undefined)
+
+______Empty Values______:
+
+An empty value has nothing to do with undefined. An empty string has both a legal value and a type.
+
+var car = "";   (The value is "", the typeof is "string")
+
+
+______Null________:
+
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist. In JavaScript, the data type of null is an object. You can empty an object by setting it to null.
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = null;    (Now value is null, but type is still an object)
+
+You can also empty an object by setting it to undefined:
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = undefined;   (Now both value and type is undefined)
+
+
+____Difference Between Undefined and Null_____:
+
+undefined and null are equal in value but different in type.
+
+typeof undefined     -  undefined
+typeof null          -  object
+
+null === undefined   -  false
+null == undefined    -  true
+
+
+
+______Primitive Data________:
+
+A primitive data value is a single simple data value with no additional properties and methods.
+The typeof operator can return one of these primitive types:
+
+typeof("John")            // Returns "string"
+typeof(5)                 // Returns "number"
+typeof(3.14)              // Returns "number"
+typeof("3")               // Returns "number"
+typeof(true)              // Returns "boolean"
+typeof(false)             // Returns "boolean"
+type of(null)             // Returns "object"
+type of(undefined)        // Returns "undefined"
+type of([1, 2, 3])        // Returns "object"
+typeof({firstName:"John", lastName:"Doe"})    // Returns "object"
+typeof(function myFunc(){})     // Returns "function"
+typeof(x)                       // Returns "undefined" (if x has no value)
+
+
+
+______Complex Data_______:
+
+The typeof operator can return one of two complex types:
+-function
+-object
+
+The typeof operator returns "object" for objects, arrays, and null. The typeof operator does not return "object" for functions.
+
+
+
+
+
+
