@@ -1,0 +1,87 @@
+Most occuring errors in Javascript:
+
+1.Uncaught TypeError: Cannot read property of undefined:
+
+Out of the six primitive types defined in JavaScript, namely boolean, string, symbol, number, Null, and undefined, no other type throws as many errors as Undefined.
+The error most often than not is faced when the scripts come across uninitialized variable or object.
+Description
+‘Undefined’ is the property of the global object. If you don’t assign any value to a variable is of type ‘undefined’. A code also return the undefined value when the evaluated variable doesn’t have any assigned value.
+Example:
+
+function test(t) {      //defining a function
+  if (t === undefined) {       //if t=undefined, call tt
+        console.log(t.tt)      //call tt member from t
+  }
+  return t;    
+}
+var a;    //a is a variable with undefined value
+console.log(test(a)); //function call
+Error
+When you run this code, you’ll get:
+Uncaught TypeError: Cannot read property 'tt' of undefined
+
+
+Debugging:
+
+If you get undefined error, you need to make sure that which ever variables throws undefined error, is assigned a value to it.
+function test(t) {      //defining a function
+  if (t === undefined) {       //if t=undefined, call tt
+        console.log(t)      //call t
+  }
+  return t;    
+}
+var a=10;    //a is a variable with undefined value
+console.log(test(a)); //function call
+
+output is: 10
+
+2.TypeError: undefined is not an object:
+
+
+var dateInput = ["18-Sep-2018", "19-Sep-2018", "20-Sep-2018", "21-Sep-2018", "22-Sep-2018"];
+var msInput = [86.69, 86.69, 86.76, 86.86, 86.97];
+var hsdInput = [79.58, 79.58, 79.58, 79.58, 79.58];
+var startDate, endDate, count;
+var dateArray, msArray, hsdArray = new Array();
+count = 0;
+startDate = "18-Sep-2018";
+endDate = "21-Sep-2018";
+
+function createArray() {
+    for (i = 0; i < dateInput.length; i = i + 1) {
+        if (dateInput[i] >= startDate && dateInput[i] <= endDate) {
+            dateArray[count] = dateInput[i];
+            count = count + 1;
+        }
+    }
+}
+createArray();
+
+console.log(msArray);
+
+Debugging:
+
+We have not initialized the dateArray variable. we should write this:
+
+var dateArray = [], msArray = [], hsdArray = [];
+
+because in var dateArray, msArray, hsdArray = new Array(); dateArray and msArray are undefined
+
+
+3.typeerror null is not an object:
+
+This is an error that occurs in Safari when you read a property or call a method on an undefined object. You can test this very easily in the Safari Developer Console. This is essentially the same as the above error for Chrome, but Safari uses a different error message.
+Example:
+var testArrray = undefined;
+if(testArray.length === 0){
+console.log("Array is empty");
+}
+
+Error:
+
+line:3
+message: "'undefined' is not an object (evaluating 'testArray.length')"
+sourceId: 2054546784
+___proto___: Error
+
+

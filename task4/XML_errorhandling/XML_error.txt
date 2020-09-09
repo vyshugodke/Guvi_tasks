@@ -1,0 +1,55 @@
+XMLHttpRequest JavaScript errors:
+
+1. Defining a Custom Error Handler:
+
+The first step is to override or redirect the built in error handler window.onerror with our own function. This is a lot simpler than it sounds:
+
+<script type="text/javascript" src="ajaxrequest.js"></script>
+<script type="text/javascript">
+
+  window.onerror = function(msg, url, line)
+  {
+    if(encodeURIComponent) {
+      var req = new AjaxRequest();
+      var params = "msg=" + encodeURIComponent(msg) + '&url=' + encodeURIComponent(url) + "&line=" + line;
+      req.setMethod("POST");
+      return req.loadXMLDoc("/logerror.php", params);
+    }
+    return false;
+  }
+
+</script>
+One point to note is the return value of the window.onerror function. If you return a value of true then only your function will be called and no message will be presented in the browser. If you instead return a value of false, your error handler will be called and then the browser will respond to the error in it's own way.
+
+The function as presented will either make a successful call to the server-side script (see below) or let the browser display the error to the user as it sees fit. That way someone is always notified of the error.
+
+The best place for this code is in the HEAD of your HTML document or in an included JavaScript file.
+
+2. Logging errors to a text file
+Here we see how a PHP script can be used as the target of the Ajax request in order to record the details of the error:
+
+<?PHP
+  include "xmlresponse.php";
+
+  if($_POST && isset($_POST['msg']) && isset($_POST['url']) && isset($_POST['line'])) {
+    $msg = $_POST['msg'];
+    $url = $_POST['url'];
+    $line = $_POST['line'];
+    if($fp = fopen("{$_SERVER['DOCUMENT_ROOT']}/onerror.log", "a")) {
+      $logline = "[{$_SERVER['REMOTE_ADDR']}]: $msg in $url on line $line";
+      fwrite($fp, date("M d H:i:s") . " $logline\n");
+      fclose($fp);
+    }
+  }
+
+  $xml = new xmlResponse();
+  $xml->start();
+  $xml->end();
+?>
+Note: save this script as /logerror.php for the whole example to work.
+
+When it receives a POST request with values for msg, url and line then a line containing that information is added to the file onerror.log. The XML header and empty response tag are necessary only to prevent a JavaScript error in the processReqChange - very important in this case as you don't want to create an infinite loop.
+
+The onerror.log file needs to be writable by the webserver. The best way to enable this is to first touch the file so that it exists, then chgrp the file to the webserver user and finally chmod 664 to make it writable.
+
+Unfortunately the Safari and Opera web browsers no longer support the setting of an onerrer event handler, so this script is less useful than it might have been.

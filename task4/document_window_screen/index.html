@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(191, 214, 241);
+            font-size: 19px;
+        }
+        
+        .imgg {
+            text-align: center;
+        }
+        
+        .container h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+        }
+        
+        .container {
+            background-color: rgb(233, 236, 232);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>DIFFERENCE BETWEEN WINDOW DOCUMENT AND SCREEN IN JAVASCRIPT</h1>
+    </div>
+    <div class="cont">
+        <h3>WINDOW:</h3>
+        <p class="one">
+            Window is an top level heirarchy in javascript and window consist of number of objects in it as properties and DOCUMENT and SCREEN are one of the objects in Window among all. Window represent the complete things about browsers window.All global JavaScript
+            objects, functions, and variables automatically become members of the window object.Global variables are properties of the window object.Global functions are methods of the window object. There are lot of properties in window object lets see
+            one example, we can determine the size of the browser window by using below property.
+            <p> <b>window.innerHeight </b> gives height of browser in pixels.</p>
+            <p>Window properties include:</p>
+            <ul>
+                <li>setTimeout() and setInterval() binding event handlers to a timer</li>
+                <li> location giving the current URL </li>
+                <li> history with methods back() and forward() giving the tab's mutable history</li>
+                <li>navigator describing the browser software</li>
+            </ul>
+        </p>
+    </div>
+    <div class="two">
+        <h3>DOCUMENT:</h3>
+        <p class="two">
+            DOCUMENT is the actual content of the page i.e the html page you are loading is converted to the DOM object [Document object Model]. When a web page is loaded, the browser creates a Document Object Model of the page. These objects get confused in part
+            because HTML elements are added to the global object when assigned a unique id.
+        </p>
+        <p>Example: <br>
+
+            < body>
+                < p id="holyCow"> This is the first paragraph
+                    < /p>
+                    </ body>
+        </p>
+        <p>The paragraph element can be referenced by any of the following:</p>
+        <ul>
+            <li>window.holyCow or window["holyCow"]</li>
+            <li>document.getElementById("holyCow")</li>
+            <li>document.body.firstChild</li>
+            <li>document.body.children[0]</li>
+        </ul>
+    </div>
+    <div class="tree">
+        <h1>The HTML DOM will be created as TREE MODEL as below:</h1>
+        <div class="imgg">
+            <h2>DOM TREE MODEL</h2>
+            <img src="img.jpg" alt="DOM tree">
+        </div>
+        <p>Java script connects with the HTML and CSS using the DOM OBJECT. Java Script can manipulate all the elements using DOM object. There are several properties in DOCUMENT. Lets see one example below. document.getElementById(“header”); gives the value
+            of header as document is property of window the above code is same as window.document.getElementById(“header”); gives the value of header.</p>
+    </div>
+    <div class="screen">
+        <h3>SCREEN:</h3>
+        <p>SCREEN is a property of WINDOW where we can see the content about the users screen.It can be used to display screen width, height etc. For example:</p>
+        <ul class="order">
+            <li>screen.width</li>
+            <li>screen.height</li>
+            <li> screen.availWidth</li>
+            <li>screen.availHeight</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
