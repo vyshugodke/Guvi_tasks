@@ -310,9 +310,12 @@ var students = [{
 ];
 
 function returnMinors(arr) {
-    for (i in students) {
-        if (students[i].age < 21) {
-            console.log(students[i].name)
-        }
+    let chars = []
+    for (let i = 0; i < arr.length; i++) {
+        let curr = arr[i]
+        if (curr["age"] < 20)
+            chars.push(curr["name"])
     }
-    returnMinors(arr)
+    return chars
+}
+console.log(returnMinors(students));
