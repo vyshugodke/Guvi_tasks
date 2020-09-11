@@ -38,7 +38,8 @@ request.onload = function() {
     console.log(totalpopul);
 
     // Print the total population of the countries in asia - filter & reduce)
-    let totalasia = data.reduce((acc, val) => { return (val.population.asia) }, 0)
+    let totalasia = Asiacnt.reduce((total, a) => total + a.population, 0)
     console.log(totalasia);
+
 
 }
