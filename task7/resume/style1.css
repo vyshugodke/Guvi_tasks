@@ -65,7 +65,7 @@ label {
 
 .head1 {
     float: left;
-    width: 48%;
+    width: 47%;
     word-wrap: break-word;
     border-right: 2px solid rgb(192, 181, 181);
     margin-top: 40px;
@@ -75,7 +75,7 @@ label {
 
 .work2 {
     float: right;
-    width: 48%;
+    width: 47%;
     word-wrap: break-word;
     margin-top: 40px;
     margin-bottom: 100px;
