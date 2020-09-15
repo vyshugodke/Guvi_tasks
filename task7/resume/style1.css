@@ -1,25 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@media only screen and (max-width: 800px) {
-    body {
-        background-color: red;
-    }
-    section {
-        display: grid;
-    }
-    .layer2 {
-        text-align: center;
-        margin: auto;
-        border: none;
-    }
-    .head1 {
-        width: 50%;
-        border-right: none;
-        word-wrap: initial;
-    }
-    .work2 {
-        width: 50%;
-    }
-}
 
 body {
     font-family: 'Roboto', sans-serif;
