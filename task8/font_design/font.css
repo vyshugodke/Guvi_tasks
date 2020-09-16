@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.head {
+    overflow: hidden;
+    background-color: rgb(63, 185, 124);
+    margin: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.head1 {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(63, 185, 124);
+    /* text-align: center; */
+    outline: 1px solid black;
+    outline-offset: -43px;
+}
+
+.first {
+    width: 100%;
+    height: 600px;
+    background-image: url("black.jpg");
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    transform: skewY(-2deg);
+}
+
+.second {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("pink.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.third {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("choc.jpg");
+    background-size: cover;
+}
+
+.four {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("sky.jpg");
+    background-size: cover;
+}
+
+.five {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("brown.jpg");
+    background-size: cover;
+}
+
+.six {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("blue.jpg");
+    background-size: cover;
+}
+
+.seven {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("chalk.jpg");
+    background-size: cover;
+}
+
+.eight {
+    width: 100%;
+    height: 600px;
+    transform: skewY(-2deg);
+    background-image: url("dark.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: auto;
+}
+
+span {
+    font-family: 'Marck Script', cursive;
+    font-size: 4em;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    transform: skewY(2deg);
+    color: rgb(231, 220, 220);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.first h1 {
+    transform: skewY(2deg);
+    color: rgb(231, 220, 220);
+}
+
+.second h1 {
+    transform: skewY(2deg);
+}
+
+.third h1 {
+    transform: skewY(2deg);
+}
+
+footer {
+    text-align: left;
+    margin: 74px;
+    font-size: 30px;
+    color: black;
+    width: 87%;
+    display: flex;
+}
+
+footer h1 {
+    text-align: right;
+    margin: 20px;
+    font-size: 30px;
+    color: black;
+    width: 30%;
+}
