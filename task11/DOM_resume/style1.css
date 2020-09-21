@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    width: 80%;
+    height: 300px;
+    background-color: rgb(102, 99, 99);
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.head img {
+    width: 180px;
+    height: 173px;
+    margin-top: 62px;
+    margin-left: 40%;
+    border-radius: 50%;
+    border: 6px dotted rgb(241, 178, 3);
+    position: absolute;
+}
+
+.name {
+    background-color: rgb(241, 178, 3);
+    width: 500px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    top: 205px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.name span {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.pstyle {
+    text-align: center;
+    background: none;
+    font-size: 22px;
+}
+
+.layer {
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    margin-top: 149px;
+}
+
+.layer2 {
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+    border-bottom: 2px solid rgb(192, 181, 181);
+    text-align: center;
+    top: 2px;
+    margin: auto;
+}
+
+label {
+    width: 50%;
+}
+
+.head1 {
+    float: left;
+    width: 47%;
+    word-wrap: break-word;
+    border-right: 2px solid rgb(192, 181, 181);
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 12px;
+}
+
+.work2 {
+    float: right;
+    width: 47%;
+    word-wrap: break-word;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 12px;
+}
+
+td {
+    width: 250px;
+    text-align: left;
+}
+
+td input {
+    width: 250px;
+}
+
+h1 {
+    text-align: left;
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+}
+
+h1 img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(241, 178, 3);
+    margin: 13px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.cmn {
+    font-size: 20px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    word-wrap: initial;
+    padding-right: 17px;
+    padding-left: 17px;
+}
+
+.edu {
+    text-align: left;
+}
