@@ -1,0 +1,24 @@
+.bordr {
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+div {
+    padding: 2px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+@media screen and (max-width:783px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.navCustom {
+    background-color: rgb(33, 28, 28) !important;
+    height: 45px !important;
+}

@@ -1,0 +1,8 @@
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navCustom {
+    background-color: rgb(33, 28, 28) !important;
+    height: 45px !important;
+}
