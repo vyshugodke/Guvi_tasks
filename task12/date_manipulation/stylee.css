@@ -1,0 +1,49 @@
+.main {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(68, 64, 64);
+    text-align: center;
+    height: 600px;
+}
+
+div.row {
+    height: 50px;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 4px;
+}
+
+input {
+    font-size: 21px;
+    padding: 4px;
+    margin: 15px;
+}
+
+label {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.btn {
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:693px) {
+    .btn {
+        width: 24%;
+        padding: 7px;
+        font-size: 13px;
+        margin: 49px;
+    }
+    h1 {
+        font-size: 33px;
+    }
+}
