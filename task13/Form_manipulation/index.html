@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your address.." required>
+
+            <label for="pin">Pincode</label>
+            <input type="text" id="pin" name="pin" placeholder="Your Pincode.." required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" required> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required> <label for="female">Female:</label>
+            <br>
+            <br>
+            <label>Choice of food: </label>
+
+            <input type="checkbox" id="one" name="one" value="Indian" />
+            <label for="one">Indian</label>
+            <input type="checkbox" id="two" value="Chineese" />
+            <label for="two"> Chineese</label>
+            <input type="checkbox" id="three" value="Mexican" />
+            <label for="three">Mexican</label>
+            <input type="checkbox" id="four" value="Japaneese" />
+            <label for="four">Japaneese</label>
+            <input type="checkbox" id="five" value="Italian" />
+            <label for="five">Italian</label>
+            <input type="checkbox" id="six" value="French" />
+            <label for="six">French</label>
+            <br>
+            <br>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Your Country.." required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="Your State.." required>
+
+
+            <button class="btn" type="submit"> Submit </button>
+        </form>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Address</th>
+                    <th>Pinode</th>
+                    <th>Gender</th>
+                    <th>Choice of Food</th>
+                    <th>Country</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody id="data_one">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
