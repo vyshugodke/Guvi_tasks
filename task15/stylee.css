@@ -1,0 +1,16 @@
+        h1 {
+            font-size: 55px;
+            margin: auto;
+            padding-top: 78px;
+            text-align: center;
+        }
+        
+        .wish {
+            font-family: cursive;
+            font-size: 60px;
+            width: 50%;
+            height: 250px;
+            margin: auto;
+            text-align: center;
+            background-image: linear-gradient(#fb690b, #d7d6ff, #d7d6ff, #55cf06)
+        }
