@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    margin: 15px;
+}
+
+.card-body {
+    margin: 5px 0;
+    padding: 3px;
+    height: 400px;
+}
+
+.card-img-top {
+    margin-bottom: 15px;
+    height: 150px;
+}
+
+.col-lg-3 {
+    padding: 8px;
+}
